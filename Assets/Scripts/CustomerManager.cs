@@ -16,14 +16,21 @@ public class CustomerManager : MonoBehaviour {
       customer = GameObject.FindGameObjectWithTag("Customer").GetComponent<Customer>();
     }
 
+    newProblems.Shuffle();
+
     GenerateNewCustomer();
   }
 
   public void GenerateNewCustomer() {
-    int i = UnityEngine.Random.Range(0, newProblems.Count);
-    customer.problem = newProblems[i];
-    newProblems.RemoveAt(i);
-
-    customer.PitchProblem();
+    for (int i = 0; i < newProblems.Count; i++) {
+      Problem problem = newProblems[i];
+      if (problem.problemType == customer.problemType) {
+        customer.problem = problem;
+        newProblems.RemoveAt(i);
+        customer.PitchProblem();
+        return;
+      }
+    }
+    throw new UnityException("Unable to find problem for customer with problemType: " + customer.problemType);
   }
 }

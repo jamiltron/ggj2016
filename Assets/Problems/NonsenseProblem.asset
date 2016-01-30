@@ -9,13 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46af0f18fe4864b6cb85a45f65c1ac51, type: 3}
-  m_Name: BaldProblem
+  m_Name: NonsenseProblem
   m_EditorClassIdentifier: 
-  problemType: 2
-  problemText: I need a new do! Please return my lushious locks of yore to this shiny
-    to this crown!
-  helpAcceptedText: Thank you!
-  helpDeclinedText: I'll headbutt you in hell!
+  problemText: Blarg
+  helpAcceptedText: lol
+  helpDeclinedText: roflmao
   positiveResponse: 
   averageResponse: 
   refusalResponse: 

@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46af0f18fe4864b6cb85a45f65c1ac51, type: 3}
   m_Name: SickCatProblem
   m_EditorClassIdentifier: 
+  problemType: 1
   problemText: My poor little Mr. Fuzz Fuzz has the sniffles!
   helpAcceptedText: Mr. Fuzz Fuzz thanks you from the bottom of his tuna-filled belly.
   helpDeclinedText: Mr. Fuzz Fuzz will haunt you until the end of his days!

@@ -10,6 +10,8 @@ using System;
  */
 
 public class Problem : ScriptableObject {
+  public ProblemType problemType;
+
   public string problemText;
   public string helpAcceptedText;
   public string helpDeclinedText;
@@ -19,13 +21,15 @@ public class Problem : ScriptableObject {
   int positiveWeight = 5;
   //lets say we have 0 to 10 (10 being the positive response)
 
-  public Problem(string problem, string pos, string avg, string refusal, string helpAcceptedText, string helpDeclinedText) {
+  public Problem(string problem, string pos, string avg, string refusal, 
+                 string helpAcceptedText, string helpDeclinedText, ProblemType problemType = ProblemType.Misc) {
     problemText = problem;
     positiveResponse = pos;
     averageResponse = avg;
     refusalResponse = refusal;
     this.helpAcceptedText = helpAcceptedText;
     this.helpDeclinedText = helpDeclinedText;
+    this.problemType = problemType;
   }
 
   public void ChangeAnswerWeight(int value) {
