@@ -18,6 +18,7 @@ public class Problem : ScriptableObject {
   public string positiveResponse;
   public string averageResponse;
   public string refusalResponse;
+  public bool accepted = false;
   int positiveWeight = 5;
   //lets say we have 0 to 10 (10 being the positive response)
 
@@ -36,7 +37,7 @@ public class Problem : ScriptableObject {
     positiveWeight += value;
   }
 
-  public string GetResponse(bool accepted) {
+  public string GetResponse() {
     if (!accepted)
       return refusalResponse;
     System.Random randObj = new System.Random(234);

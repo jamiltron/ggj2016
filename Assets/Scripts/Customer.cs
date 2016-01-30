@@ -24,6 +24,7 @@ public class Customer : MonoBehaviour {
 
   public void Help() {
     speechTextBox.text = problem.helpAcceptedText;
+	problem.accepted = true;
   }
 
   public void Decline() {
