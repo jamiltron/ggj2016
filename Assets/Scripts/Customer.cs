@@ -3,8 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class Customer : MonoBehaviour {
-
-  public ProblemType problemType = ProblemType.Misc;
+  public ProblemType problemType;
   public Problem problem;
 
   public string problemStatement;

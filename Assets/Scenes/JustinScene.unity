@@ -195,6 +195,10 @@ Prefab:
       propertyPath: speechTextBox
       value: 
       objectReference: {fileID: 1929715393}
+    - target: {fileID: 11456720, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
+      propertyPath: problemType
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
   m_IsPrefabParent: 0

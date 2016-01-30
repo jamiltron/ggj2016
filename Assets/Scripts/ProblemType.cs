@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-using System.Collections;
-
-public enum ProblemType {
+﻿public enum ProblemType {
   Misc,
   Cat,
   Baldness

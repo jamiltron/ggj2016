@@ -14,7 +14,7 @@ MonoBehaviour:
   problemType: 1
   problemText: My poor little Mr. Fuzz Fuzz has the sniffles!
   helpAcceptedText: Mr. Fuzz Fuzz thanks you from the bottom of his tuna-filled belly.
-  helpDeclinedText: Mr. Fuzz Fuzz will haunt you until the end of his days!
+  helpDeclinedText: Mr. Fuzz Fuzz will haunt you until the end of your days!
   positiveResponse: 
   averageResponse: 
   refusalResponse: 
