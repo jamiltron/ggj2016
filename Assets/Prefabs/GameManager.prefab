@@ -39,12 +39,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d9e4ccc72124eb4b6882cf475c7417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  customer: {fileID: 0}
+  currentCustomer: {fileID: 0}
+  customerPrefabs:
+  - {fileID: 179418, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
+  - {fileID: 179418, guid: 60a2320f488764bd88d3cac75ef1c3a1, type: 2}
+  - {fileID: 179418, guid: 5d66f33d99f9548688fce74592dcb47f, type: 2}
+  completedCustomers: []
   newProblems:
   - {fileID: 11400000, guid: 15f6ad278a98c4a089d0d2cc06b0903b, type: 2}
   - {fileID: 11400000, guid: 87f90310175dc4f34b2ebad2ab6071d3, type: 2}
   - {fileID: 11400000, guid: 5f00ce090f0d443a3a9fcc558c339e9e, type: 2}
   completedProblems: []
+  speechTextBox: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
