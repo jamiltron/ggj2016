@@ -352,7 +352,7 @@ GameObject:
   - 4: {fileID: 1695012235}
   - 114: {fileID: 1695012234}
   m_Layer: 0
-  m_Name: CustomerManager
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
