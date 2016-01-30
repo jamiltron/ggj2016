@@ -13,7 +13,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   problemType: 2
   problemText: I need a new do! Please return my lushious locks of yore to this shiny
-    to this crown!
+    crown!
   helpAcceptedText: Thank you!
   helpDeclinedText: I'll headbutt you in hell!
   positiveResponse: 
