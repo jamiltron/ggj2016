@@ -16,6 +16,7 @@ MonoBehaviour:
     crown!
   helpAcceptedText: Thank you!
   helpDeclinedText: I'll headbutt you in hell!
-  positiveResponse: 
-  averageResponse: 
-  refusalResponse: 
+  positiveResponse: Yaay
+  averageResponse: Meh
+  refusalResponse: Boo
+  accepted: 1
