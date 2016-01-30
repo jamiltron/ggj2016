@@ -12,11 +12,15 @@ public class WelpCanvas : MonoBehaviour {
 			currentCustomer = GameObject.FindGameObjectWithTag("Customer").GetComponent<Customer>();
 		}
 	}
-	void OnEnabled()
+	public void ShowResponseText()
 	{
 		if (currentCustomer.problem)
 		{
+			if (welpReviewText==null) {
+				Debug.Log ("review text is empty");
+			}
 			welpReviewText.text = currentCustomer.problem.GetResponse ();
+			GetComponent<Canvas> ().enabled = true;
 		}
 	}
 }
