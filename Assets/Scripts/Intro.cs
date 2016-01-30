@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 using System.Collections;
 
 public class Intro : MonoBehaviour {
@@ -15,6 +16,6 @@ public class Intro : MonoBehaviour {
 
 	public void OnStartGameClicked()
 	{
-		Application.LoadLevel ("GameScene");
+		SceneManager.LoadScene("GameScene");
 	}
 }
