@@ -87,6 +87,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48c3d07eb77e1498cac66c0912166abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  problemType: 0
+  problem: {fileID: 0}
   problemStatement: Halp I haved an single prablem!
   helpResponse: Oh lol.
   declineResponse: Lol :(
