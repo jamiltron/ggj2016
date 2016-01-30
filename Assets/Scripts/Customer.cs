@@ -18,10 +18,6 @@ public class Customer : MonoBehaviour {
     PitchProblem();
   }
 
-  void Update() {
-	
-  }
-
   public void PitchProblem() {
     speechTextBox.text = problemStatement;
   }
