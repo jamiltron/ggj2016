@@ -12,6 +12,8 @@ public class CustomerManager : MonoBehaviour {
   public List<Problem> completedProblems;
 
   void Start() {
+    Object.DontDestroyOnLoad(gameObject);
+
     if (customer == null) {
       customer = GameObject.FindGameObjectWithTag("Customer").GetComponent<Customer>();
     }
