@@ -2,20 +2,20 @@
 using UnityEngine.SceneManagement;
 using System.Collections;
 
-public class Intro : MonoBehaviour {
+public class UITransitions : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
+	void Awake()
+	{
+		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
 	public void OnStartGameClicked()
 	{
 		SceneManager.LoadScene("GameScene");
 	}
+
+	public void OnOpenWelpScreenClicked()
+	{
+		
+	}
+		
 }
