@@ -4,6 +4,8 @@ using System.Collections;
 
 public class Customer : MonoBehaviour {
 
+  public Problem problem;
+
   public string problemStatement;
   public string helpResponse;
   public string declineResponse;
@@ -14,20 +16,18 @@ public class Customer : MonoBehaviour {
     if (speechTextBox == null) {
       speechTextBox = GameObject.FindGameObjectWithTag("SpeechBubble").GetComponent<Text>();
     }
-
-    PitchProblem();
   }
 
   public void PitchProblem() {
-    speechTextBox.text = problemStatement;
+    speechTextBox.text = problem.problemText;
   }
 
   public void Help() {
-    speechTextBox.text = helpResponse;
+    speechTextBox.text = problem.helpAcceptedText;
   }
 
   public void Decline() {
-    speechTextBox.text = declineResponse;
+    speechTextBox.text = problem.helpDeclinedText;
   }
 
 }
