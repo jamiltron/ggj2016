@@ -1,19 +1,33 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+public enum ItemBehavior
+{
+	sprinkable,
+	sticky
+}
+
 public class Draggable : MonoBehaviour {
 
   public LayerMask meshMask;
   public LayerMask grabMask;
   public string type;
+  public ItemBehavior itemBehavior;
   public float zoomSpeed = 2f;
   public float zoomThreshold = 0.1f;
   private bool zooming = false;
-  
+
+  Vector3 initialPosition;
+
 
   bool isMouseDrag;
   Vector3 offset;
   Vector3 objScreenPosition;
+
+	void Start()
+	{
+		initialPosition = transform.position;
+	}
 
   // Update is called once per frame
   void Update() {
@@ -41,7 +55,7 @@ public class Draggable : MonoBehaviour {
 				RaycastHit2D hit = Physics2D.Raycast (vec, Vector2.right, 0.1f, meshMask);
 				Debug.DrawLine (vec, hit.point);
 				if (hit.transform != null) {
-					hit.transform.gameObject.GetComponent<CureManager> ().MeshObject (gameObject,type);
+					hit.transform.gameObject.GetComponent<CureManager> ().MeshObject (this);
 				}
 			}
 			isMouseDrag = false;
@@ -68,6 +82,11 @@ public class Draggable : MonoBehaviour {
       transform.position = newNextPos;
     }
   }
+
+	public void ReturnToOriginalPlace()
+	{
+		transform.position = initialPosition;
+	}
 
   public IEnumerator ChangeZLevels(float targetZ) {
     zooming = true;

@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿
+
+using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -26,10 +28,15 @@ public class CureManager : MonoBehaviour {
 
 	}
 
-	public void MeshObject(GameObject go,string type)
+	public void MeshObject(Draggable item)
 	{
-		objectsUsed.Add (type);
-		go.transform.SetParent( meshedParent.transform);
-		go.GetComponent<Collider2D> ().enabled = false;
+		objectsUsed.Add (item.type);
+		if (item.itemBehavior == ItemBehavior.sticky) {
+			item.gameObject.transform.SetParent (meshedParent.transform);
+			item.GetComponent<Collider2D> ().enabled = false;
+		} else {
+			//item.GetComponent<Animation>().Play("Sprinkle");
+			item.ReturnToOriginalPlace();
+		}
 	}
 }
