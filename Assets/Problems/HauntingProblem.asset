@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46af0f18fe4864b6cb85a45f65c1ac51, type: 3}
+  m_Name: HauntingProblem
+  m_EditorClassIdentifier: 
+  problemType: 0
+  problemText: 'My grungrungrunkle''s ghost is still lingering in our house. Please
+    help us!!! '
+  helpAcceptedText: Thank you so much!
+  helpDeclinedText: I will tell him to visit you too!
+  positiveResponse: It was amazing to sleep without the ghost snoring for once! Thank
+    you doc!
+  averageResponse: I wish the cure was more effective. It only helped for a couple
+    of days.
+  negativeResponse: What a trap! Now we have grunkle's whole soccer team hanging out
+    in our bedroom!
+  refusalResponse: This doctor is not a very friendly one. She barely listened to
+    my problem and immediately refused to help.
+  accepted: 0
+  rating: 0

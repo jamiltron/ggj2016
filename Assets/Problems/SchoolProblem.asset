@@ -9,15 +9,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46af0f18fe4864b6cb85a45f65c1ac51, type: 3}
-  m_Name: New Problem
+  m_Name: SchoolProblem
   m_EditorClassIdentifier: 
   problemType: 0
-  problemText: 
-  helpAcceptedText: 
-  helpDeclinedText: 
-  positiveResponse: 
-  averageResponse: 
-  negativeResponse: 
-  refusalResponse: 
+  problemText: Hey Ma'am! Ahm.. Can you help me kill the kids bullying me at school?
+  helpAcceptedText: YEAH! Ahm.. YOU WILL DIE POOPHEADS! Ahm.. Thank you. Goodbye.
+  helpDeclinedText: Ahm.. Okay.. Bye..
+  positiveResponse: Great doctor! Noone can mess with me anymore!
+  averageResponse: It was sort of working, I wish I didn't kill Mr.Waltz by accident.
+    Oops.
+  negativeResponse: I said the enemies! Not my only friends! I killed my only friends
+    with the help(!) of this doctor.
+  refusalResponse: She doesn't care helping kids getting bullied. Horrible person!
   accepted: 0
   rating: 0
