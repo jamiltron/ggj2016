@@ -19,9 +19,7 @@ public class HeightLimiter : MonoBehaviour {
 
   void LateUpdate() {
     float halfY = col.bounds.size.y / 2;
-    Debug.Log(trans.position.y - halfY);
     if (trans.position.y - halfY < minHeight) {
-      Debug.Log("LIMITING!");
       Vector3 vec = trans.position;
       vec.y = minHeight + halfY;
       trans.position = vec;
