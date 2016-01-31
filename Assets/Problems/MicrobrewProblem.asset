@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46af0f18fe4864b6cb85a45f65c1ac51, type: 3}
+  m_Name: MicrobrewProblem
+  m_EditorClassIdentifier: 
+  problemType: 0
+  problemText: I need something to make sure my righteous microbrew comes out dank
+    as hell.
+  helpAcceptedText: Awesome!
+  helpDeclinedText: Damn man, damn.
+  positiveResponse: This sorceress sent my IBUs through the roof!
+  averageResponse: I don't know if I was supposed to ferment this or what.
+  negativeResponse: Made my drink stink!
+  refusalResponse: Witch scared of a little barley.
+  accepted: 0
+  rating: 0

@@ -20,5 +20,5 @@ MonoBehaviour:
   averageResponse: Meh
   negativeResponse: YOU DID SO BAD!
   refusalResponse: Boo
-  accepted: 1
+  accepted: 0
   rating: 0

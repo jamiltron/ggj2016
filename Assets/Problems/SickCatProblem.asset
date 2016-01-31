@@ -20,4 +20,4 @@ MonoBehaviour:
   negativeResponse: My cat done did die!
   refusalResponse: boo cat
   accepted: 0
-  rating: 1
+  rating: 0
