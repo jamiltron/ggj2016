@@ -28,8 +28,6 @@ GameObject:
   - 222: {fileID: 22277240}
   - 114: {fileID: 11407290}
   - 114: {fileID: 11460302}
-  - 114: {fileID: 11402136}
-  - 114: {fileID: 11485166}
   - 111: {fileID: 11112142}
   - 114: {fileID: 11489764}
   m_Layer: 5
@@ -91,17 +89,6 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
---- !u!114 &11402136
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e2879a94df424fb7af368efc06c27a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11407290
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -150,10 +137,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 7452050e4378c4fab95cc2701e791ced, type: 3}
-    m_FontSize: 40
+    m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 3
+    m_MinSize: 2
     m_MaxSize: 43
     m_Alignment: 4
     m_AlignByGeometry: 0
@@ -276,17 +263,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &11485166
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 147512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e2879a94df424fb7af368efc06c27a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11485478
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -486,8 +462,8 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -185, y: 85}
-  m_SizeDelta: {x: 300, y: 100}
+  m_AnchoredPosition: {x: -130, y: 170}
+  m_SizeDelta: {x: 242, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &22478424
 RectTransform:
@@ -503,8 +479,8 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1.5, y: 2.5}
+  m_SizeDelta: {x: -33, y: -35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &100100000
 Prefab:
