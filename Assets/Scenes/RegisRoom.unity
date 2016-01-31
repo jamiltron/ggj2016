@@ -170,7 +170,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
 --- !u!4 &206214275 stripped
 Transform:
   m_PrefabParentObject: {fileID: 462120, guid: 7ad7732f757314d3dac9079e72c236cf, type: 2}
@@ -379,7 +379,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
 --- !u!1 &894502594
 GameObject:
   m_ObjectHideFlags: 0
@@ -614,6 +614,52 @@ SpriteRenderer:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+--- !u!1001 &1793085270
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 437456, guid: fc05e06739a07418082719d47997c373, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 81.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 437456, guid: fc05e06739a07418082719d47997c373, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -5.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 437456, guid: fc05e06739a07418082719d47997c373, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 25.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 437456, guid: fc05e06739a07418082719d47997c373, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 437456, guid: fc05e06739a07418082719d47997c373, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 437456, guid: fc05e06739a07418082719d47997c373, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 437456, guid: fc05e06739a07418082719d47997c373, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 437456, guid: fc05e06739a07418082719d47997c373, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 151758, guid: fc05e06739a07418082719d47997c373, type: 2}
+      propertyPath: m_Name
+      value: MainScene (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: fc05e06739a07418082719d47997c373, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &2013868030
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,4 +690,4 @@ Transform:
   - {fileID: 207620598}
   - {fileID: 1058998225}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4

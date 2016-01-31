@@ -225,6 +225,18 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 167060, guid: d024ce49cdab34f8f8903651c0e8c2ad, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 176450, guid: d024ce49cdab34f8f8903651c0e8c2ad, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11434756, guid: d024ce49cdab34f8f8903651c0e8c2ad, type: 2}
+      propertyPath: m_UiScaleMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d024ce49cdab34f8f8903651c0e8c2ad, type: 2}
   m_IsPrefabParent: 0
@@ -244,6 +256,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   welpReviewText: {fileID: 1030869860}
+  rating: 0
+  stars: []
 --- !u!114 &1030869860 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11432032, guid: d024ce49cdab34f8f8903651c0e8c2ad,
