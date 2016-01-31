@@ -545,7 +545,17 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
       value: RotateCamera
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 11460302, guid: b26cb97910c21470fbb6891481edebef, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1622477646}
+    - target: {fileID: 11460302, guid: b26cb97910c21470fbb6891481edebef, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnOpenWelpScreenClicked
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 11402136, guid: b26cb97910c21470fbb6891481edebef, type: 2}
+    - {fileID: 11485166, guid: b26cb97910c21470fbb6891481edebef, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b26cb97910c21470fbb6891481edebef, type: 2}
   m_IsPrefabParent: 0
 --- !u!223 &493445980 stripped
