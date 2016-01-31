@@ -4,6 +4,9 @@ using System.Collections.Generic;
 
 public class CustomerManager : MonoBehaviour {
 
+  public int customersToServe = 5;
+  public int customersServed = 0;
+
   [Range(1, 5)]
   public int positiveRatingThreshold = 4;
 
@@ -46,7 +49,7 @@ public class CustomerManager : MonoBehaviour {
   }
 
   public void GenerateNewCustomer() {
-    if (customerPrefabs.Count > 0) {
+    if (customerPrefabs.Count > 0 && customersServed < customersToServe) {
       pitchCanvas.gameObject.transform.parent.gameObject.SetActive(true);
       GameObject customerObject = GameObject.Instantiate(customerPrefabs[0]);
       currentCustomer = customerObject.GetComponent<Customer>();
@@ -62,15 +65,15 @@ public class CustomerManager : MonoBehaviour {
           currentCustomer.problem = problem;
           newProblems.RemoveAt(i);
           currentCustomer.PitchProblem();
-		  if (pitchCanvas) {
-		  	pitchCanvas.enabled = true;
-		  }
-		  if (SoundManager.instance) {
-			SoundManager.instance.PlayNewCustomerArrival();
-		  }
-		  if (cureMgr) {
-			cureMgr.StartTheCure();
-		  }
+          if (pitchCanvas) {
+            pitchCanvas.enabled = true;
+          }
+          if (SoundManager.instance) {
+            SoundManager.instance.PlayNewCustomerArrival();
+          }
+          if (cureMgr) {
+            cureMgr.StartTheCure();
+          }
           return;
         }
       }
@@ -94,7 +97,7 @@ public class CustomerManager : MonoBehaviour {
     handButton.SetActive(true);
     if (SoundManager.instance)
       SoundManager.instance.PlayButtonClickSfx();
-	Camera.main.transform.Rotate (new Vector3 (0, 180, 0));
+    Camera.main.transform.Rotate(new Vector3(0, 180, 0));
 
   }
 
@@ -108,6 +111,7 @@ public class CustomerManager : MonoBehaviour {
 
   public void DismissCustomer() {
     if (currentCustomer != null) {
+      customersServed += 1;
       completedCustomers.Add(currentCustomer);
       currentCustomer.gameObject.SetActive(false);
     }
