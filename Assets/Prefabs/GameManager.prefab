@@ -39,6 +39,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57d9e4ccc72124eb4b6882cf475c7417, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  positiveRatingThreshold: 4
+  averageRatingThreshold: 3
+  negativeRatingThreshold: 2
   currentCustomer: {fileID: 0}
   customerPrefabs:
   - {fileID: 179418, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
@@ -52,7 +55,9 @@ MonoBehaviour:
   completedProblems: []
   speechTextBox: {fileID: 0}
   pitchCanvas: {fileID: 0}
+  gameOverCanvas: {fileID: 0}
   handButton: {fileID: 0}
+  cureMgr: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
