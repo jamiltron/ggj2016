@@ -55,6 +55,8 @@ public class CustomerManager : MonoBehaviour {
         currentCustomer.problem = problem;
         newProblems.RemoveAt(i);
         currentCustomer.PitchProblem();
+				if (pitchCanvas)
+					pitchCanvas.enabled = true;
         return;
       }
     }
