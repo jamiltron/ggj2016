@@ -19,7 +19,7 @@ public class WelpCanvas : MonoBehaviour {
   }
 
   public void SetStars() {
-    for (int i = 0; i < rating; i++) {
+	for (int i = 0; i < rating && i<stars.Length; i++) {
       stars[i].gameObject.SetActive(true);
     }
   }

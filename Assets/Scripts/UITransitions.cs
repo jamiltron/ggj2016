@@ -33,5 +33,10 @@ public class UITransitions : MonoBehaviour {
       welpUI.SetActive(true);
     }
   }
+
+	public void RotateCamera(float y)
+	{
+		Camera.main.transform.Rotate (new Vector3 (0, y, 0));
+	}
 		
 }
