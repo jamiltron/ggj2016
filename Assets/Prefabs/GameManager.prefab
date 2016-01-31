@@ -55,7 +55,14 @@ MonoBehaviour:
   newProblems:
   - {fileID: 11400000, guid: 15f6ad278a98c4a089d0d2cc06b0903b, type: 2}
   - {fileID: 11400000, guid: 87f90310175dc4f34b2ebad2ab6071d3, type: 2}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: dd70d1912ca91421f8eb8f9122d36eaf, type: 2}
+  - {fileID: 11400000, guid: cd0bcc4baa3a94b51ae56eb7a9d7bd4c, type: 2}
+  - {fileID: 11400000, guid: 30c4a6208b8f8452194d06eb7debacac, type: 2}
+  - {fileID: 11400000, guid: 1f4d24156a78b431aad97a2b95af3377, type: 2}
+  - {fileID: 11400000, guid: 9260e41809bac431c874aebc585dbd24, type: 2}
+  - {fileID: 11400000, guid: 44c3a52b99e564c5488d334c91d7d7b1, type: 2}
+  - {fileID: 11400000, guid: e822faec1552443f098d720b2f2502b6, type: 2}
+  - {fileID: 11400000, guid: 67262a9cf0660459484166c5836a9f65, type: 2}
   completedProblems: []
   speechTextBox: {fileID: 0}
   pitchCanvas: {fileID: 0}
