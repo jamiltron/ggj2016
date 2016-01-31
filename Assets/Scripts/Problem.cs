@@ -38,8 +38,9 @@ public class Problem : ScriptableObject {
   }
 
   public string GetResponse() {
-    if (!accepted)
+    if (!accepted) {
       return refusalResponse;
+    }
     System.Random randObj = new System.Random(234);
     int randDecider = randObj.Next(0, 10);
     if (positiveWeight >= randDecider) {
