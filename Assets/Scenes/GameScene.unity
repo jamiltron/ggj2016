@@ -1617,11 +1617,7 @@ Transform:
   m_Children:
   - {fileID: 485931205}
   - {fileID: 1163508078}
-<<<<<<< HEAD
   - {fileID: 2140934370}
-=======
-  - {fileID: 675590296}
->>>>>>> 6c4195df7a9df5160be07329d26f5223128914e7
   - {fileID: 589268721}
   - {fileID: 902666110}
   - {fileID: 1814182731}
