@@ -8,6 +8,8 @@ public class SoundManager : MonoBehaviour {
 	public AudioClip newCustomerArrivalSfx;
 	public AudioClip sprinkleSfx;
 
+    public AudioClip dropItemOnTable;
+
 	public AudioClip buttonUISfx;
 
 	public AudioSource sfxSource;              
@@ -22,6 +24,10 @@ public class SoundManager : MonoBehaviour {
 			Destroy (gameObject);
 		DontDestroyOnLoad (gameObject);
 	}
+    public void PlayDropOnTableSfx()
+    {
+	    PlaySoundEffect(dropItemOnTable);
+    }
 
 	public void PlayPotionSfx()
 	{
