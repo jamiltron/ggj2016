@@ -9,7 +9,7 @@ public enum ItemBehavior
 
 public class Draggable : MonoBehaviour
 {
-
+  public LayerMask zoomLayer;
   public LayerMask meshMask;
   public LayerMask grabMask;
   public string type;
@@ -17,6 +17,8 @@ public class Draggable : MonoBehaviour
   public float zoomSpeed = 2f;
   public float zoomThreshold = 0.1f;
   private bool zooming = false;
+
+  GameObject currentZone = null;
 
   //for sprinking
   public Color sprinkleColor;
@@ -59,13 +61,13 @@ public class Draggable : MonoBehaviour
       {
         if (isMouseDrag)
           {	
-            objScreenPosition = Camera.main.WorldToScreenPoint(transform.position);
+            /*objScreenPosition = Camera.main.WorldToScreenPoint(transform.position);
             offset = transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, objScreenPosition.z));
             Vector3 currentScreenSpace = new Vector3(Input.mousePosition.x, Input.mousePosition.y, objScreenPosition.z);
             Vector3 vec = Camera.main.ScreenToWorldPoint(currentScreenSpace);
-
-            RaycastHit2D hit = Physics2D.Raycast(vec, Vector2.right, 0.1f, meshMask);
-            Debug.DrawLine(vec, hit.point);
+*/
+			  RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right, 0.1f, meshMask);
+           // Debug.DrawLine(vec, hit.point);
             if (hit.transform != null)
               {
                 hit.transform.gameObject.GetComponent<CureManager>().MeshObject(this);
@@ -82,12 +84,18 @@ public class Draggable : MonoBehaviour
         //It will update target gameobject's current postion.
         Vector3 newNextPos = new Vector3(nextPos.x, nextPos.y, transform.position.z);
 
-        RaycastHit2D hit = Physics2D.Raycast(nextPos, Vector2.right, 0.1f);
+		  RaycastHit2D hit = Physics2D.Raycast(nextPos, Vector2.right, 0.1f,zoomLayer);
         if (hit.transform != null)
           {
-            if (hit.transform.gameObject.tag == "ZoomZone" && !zooming)
+			  if (hit.transform.gameObject.tag == "ZoomZone" && !zooming)
               {
+				if (currentZone != hit.transform.gameObject)
+				  {
+					StopCoroutine("ChangeZLevels");
+
+				  }
                 StartCoroutine(ChangeZLevels(hit.transform.gameObject.GetComponent<ZoomZone>().zLevel));
+				currentZone = hit.transform.gameObject;
               }
           }
 
