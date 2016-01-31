@@ -13,7 +13,7 @@ GameObject:
   - 60: {fileID: 6075876}
   - 111: {fileID: 11144428}
   m_Layer: 9
-  m_Name: potion
+  m_Name: purplePotion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 141430}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.6, y: 7.19, z: -3.61}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -148,11 +148,11 @@ MonoBehaviour:
   grabMask:
     serializedVersion: 2
     m_Bits: 512
-  type: potion
+  type: potionPurple
   itemBehavior: 0
   zoomSpeed: 2
   zoomThreshold: 0.1
-  sprinkleColor: {r: 0.930933, g: 0, b: 0.9852941, a: 1}
+  sprinkleColor: {r: 0.70980394, g: 0.40784317, b: 0.85098046, a: 1}
   sprinkleAnim: {fileID: 0}
 --- !u!212 &21261640
 SpriteRenderer:
@@ -180,7 +180,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ecff1e94cc51d4d0486740ef93e0be9d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1ecafec19b0044919b24474b6fcb010f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -190,7 +190,40 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1ecafec19b0044919b24474b6fcb010f,
+        type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: sprinkleColor.r
+      value: 0.70980394
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: sprinkleColor.g
+      value: 0.40784317
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: sprinkleColor.b
+      value: 0.85098046
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: type
+      value: potionPurple
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 141430}
