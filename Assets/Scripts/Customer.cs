@@ -9,10 +9,7 @@ public class Customer : MonoBehaviour {
   public Sprite customerImg;
 
   void Awake() {
-    if (speechTextBox == null) {
-      speechTextBox = GameObject.FindGameObjectWithTag("SpeechBubble").GetComponent<Text>();
-    }
-	GetComponent<SpriteRenderer> ().sprite = customerImg;
+    GetComponent<SpriteRenderer>().sprite = customerImg;
   }
 
   public void PitchProblem() {

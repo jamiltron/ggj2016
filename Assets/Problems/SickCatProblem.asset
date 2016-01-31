@@ -17,5 +17,7 @@ MonoBehaviour:
   helpDeclinedText: Mr. Fuzz Fuzz will haunt you until the end of your days!
   positiveResponse: yeah cat
   averageResponse: meh cat
+  negativeResponse: My cat done did die!
   refusalResponse: boo cat
   accepted: 0
+  rating: 1

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - SpeechBubble
   - Customer
+  - ZoomZone
+  - MeshingArea
+  - GameOver
   layers:
   - Default
   - TransparentFX
@@ -15,9 +18,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - ZoomZone
+  - GrabLayer
+  - MeshingArea
   - 
   - 
   - 
