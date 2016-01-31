@@ -42,6 +42,7 @@ public class CustomerManager : MonoBehaviour {
 
     // TODO: handle when we are out of customers
 	if (customerPrefabs.Count > 0) {
+		pitchCanvas.gameObject.transform.parent.gameObject.SetActive (true);
 		GameObject customerObject = GameObject.Instantiate (customerPrefabs [0]);
 		currentCustomer = customerObject.GetComponent<Customer> ();
 		if (speechTextBox == null) {
