@@ -5,15 +5,11 @@ using System.Collections;
 public class WelpCanvas : MonoBehaviour {
 
 	public Text welpReviewText;
-	Customer currentCustomer;
-	void Awake()
-	{
-		if (currentCustomer == null) {
-			currentCustomer = GameObject.FindGameObjectWithTag("Customer").GetComponent<Customer>();
-		}
-	}
+
 	public void ShowResponseText()
 	{
+		Customer currentCustomer = GameObject.Find("GameManager").GetComponent<CustomerManager>().currentCustomer;
+
 		if (currentCustomer.problem)
 		{
 			if (welpReviewText==null) {

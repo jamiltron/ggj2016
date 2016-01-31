@@ -20,13 +20,18 @@ public class UITransitions : MonoBehaviour {
 	}
 	public void OnStartGameClicked()
 	{
+		SoundManager.instance.PlayButtonClickSfx ();
+		SoundManager.instance.PlayGameBkgMusic ();
 		SceneManager.LoadScene("GameScene");
 	}
 
 	public void OnOpenWelpScreenClicked()
 	{
-		if(welpUI)
-			welpUI.GetComponent<WelpCanvas>().ShowResponseText();
+		if (welpUI) {
+			if(SoundManager.instance)
+				SoundManager.instance.PlayButtonClickSfx ();
+			welpUI.GetComponent<WelpCanvas> ().ShowResponseText ();
+		}
 	}
 		
 }
