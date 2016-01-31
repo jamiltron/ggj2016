@@ -88,6 +88,7 @@ public class CustomerManager : MonoBehaviour {
     handButton.SetActive(true);
     if (SoundManager.instance)
       SoundManager.instance.PlayButtonClickSfx();
+	Camera.main.transform.Rotate (new Vector3 (0, 180, 0));
 
   }
 
