@@ -400,10 +400,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 2003561670}
     m_Modifications:
-    - target: {fileID: 11152598, guid: 2d6807da6bd66448bae7196fe0adbe25, type: 2}
-      propertyPath: m_Animations.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 423976, guid: 2d6807da6bd66448bae7196fe0adbe25, type: 2}
       propertyPath: m_LocalPosition.x
       value: 3.66
@@ -436,20 +432,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11427766, guid: 2d6807da6bd66448bae7196fe0adbe25, type: 2}
-      propertyPath: meshMask.m_Bits
-      value: 1024
-      objectReference: {fileID: 0}
-    - target: {fileID: 11152598, guid: 2d6807da6bd66448bae7196fe0adbe25, type: 2}
-      propertyPath: m_Animations.Array.data[0]
-      value: 
-      objectReference: {fileID: 7400000, guid: d574873a4bae443ac883a73d997b00c8, type: 2}
-    - target: {fileID: 11152598, guid: 2d6807da6bd66448bae7196fe0adbe25, type: 2}
-      propertyPath: m_Animation
-      value: 
-      objectReference: {fileID: 7400000, guid: d574873a4bae443ac883a73d997b00c8, type: 2}
-    m_RemovedComponents:
-    - {fileID: 11152598, guid: 2d6807da6bd66448bae7196fe0adbe25, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2d6807da6bd66448bae7196fe0adbe25, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &479520699
@@ -1073,24 +1056,6 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 457452, guid: db0cac34b4d994f17ab08c11ae6ea130, type: 2}
   m_PrefabInternal: {fileID: 1154692745}
---- !u!1 &1181285778 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 105288, guid: 2d6807da6bd66448bae7196fe0adbe25, type: 2}
-  m_PrefabInternal: {fileID: 398134290}
---- !u!111 &1181285779
-Animation:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1181285778}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: d574873a4bae443ac883a73d997b00c8, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1001 &1181958800
 Prefab:
   m_ObjectHideFlags: 0
