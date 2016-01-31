@@ -19,10 +19,6 @@ public class CustomerManager : MonoBehaviour {
 
   void Awake() {
     Object.DontDestroyOnLoad(gameObject);
-
-    if (speechTextBox == null) {
-      speechTextBox = GameObject.FindGameObjectWithTag("SpeechBubble").GetComponent<Text>();
-    }
   }
 
   void Start() {
@@ -42,6 +38,9 @@ public class CustomerManager : MonoBehaviour {
     // TODO: handle when we are out of customers
     GameObject customerObject = GameObject.Instantiate(customerPrefabs[0]);
     currentCustomer = customerObject.GetComponent<Customer>();
+    if (speechTextBox == null) {
+      speechTextBox = GameObject.FindGameObjectWithTag("SpeechBubble").GetComponent<Text>();
+    }
     currentCustomer.speechTextBox = speechTextBox;
     customerPrefabs.RemoveAt(0);
 

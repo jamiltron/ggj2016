@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class dilaradragtest : MonoBehaviour {
+public class Draggable : MonoBehaviour {
 
   public LayerMask grabMask;
   public float zoomSpeed = 2f;
