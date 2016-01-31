@@ -98,7 +98,7 @@ public class CustomerManager : MonoBehaviour {
 
   public string GenerateReview() {
     if (currentCustomer.problem.accepted) {
-      int r = UnityEngine.Random.Range(1, 5);
+      int r = UnityEngine.Random.Range(1, 6);
       currentCustomer.problem.rating = r;
       Debug.Log("RATING: " + r);
       if (r >= positiveRatingThreshold) {
@@ -109,7 +109,7 @@ public class CustomerManager : MonoBehaviour {
         return currentCustomer.problem.negativeResponse;
       }
     } else {
-      currentCustomer.problem.rating = UnityEngine.Random.Range(1, 2);
+      currentCustomer.problem.rating = UnityEngine.Random.Range(1, 3);
       return currentCustomer.problem.refusalResponse;
     }
   }

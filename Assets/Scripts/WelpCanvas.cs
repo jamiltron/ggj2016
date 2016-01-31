@@ -24,12 +24,9 @@ public class WelpCanvas : MonoBehaviour {
     }
   }
 
-  /* if (currentCustomer.problem) {
-      if (welpReviewText == null) {
-        Debug.Log("review text is empty");
-      }
-      welpReviewText.text = currentCustomer.problem.GetResponse();
-      GetComponent<Canvas>().enabled = true;
+  public void ClearStars() {
+    for (int i = 0; i < stars.Length; i++) {
+      stars[i].gameObject.SetActive(false);
     }
-  }*/
+  }
 }
