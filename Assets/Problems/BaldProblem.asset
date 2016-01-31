@@ -19,4 +19,4 @@ MonoBehaviour:
   positiveResponse: Yaay
   averageResponse: Meh
   refusalResponse: Boo
-  accepted: 1
+  accepted: 0

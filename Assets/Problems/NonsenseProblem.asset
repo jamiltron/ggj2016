@@ -11,9 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46af0f18fe4864b6cb85a45f65c1ac51, type: 3}
   m_Name: NonsenseProblem
   m_EditorClassIdentifier: 
+  problemType: 0
   problemText: Blarg
   helpAcceptedText: lol
   helpDeclinedText: roflmao
-  positiveResponse: 
-  averageResponse: 
-  refusalResponse: 
+  positiveResponse: some positive
+  averageResponse: some avg
+  refusalResponse: asjdaksjdha
+  accepted: 0

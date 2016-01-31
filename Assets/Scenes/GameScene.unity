@@ -185,6 +185,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e110de05e8c2a4c3cbac094bb7285e93, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &221286897 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 176450, guid: d024ce49cdab34f8f8903651c0e8c2ad, type: 2}
+  m_PrefabInternal: {fileID: 275639844}
 --- !u!1 &238533574
 GameObject:
   m_ObjectHideFlags: 0
@@ -382,6 +386,14 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22302016, guid: d024ce49cdab34f8f8903651c0e8c2ad, type: 2}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 176450, guid: d024ce49cdab34f8f8903651c0e8c2ad, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22302016, guid: d024ce49cdab34f8f8903651c0e8c2ad, type: 2}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -1101,7 +1113,7 @@ RectTransform:
   m_Children:
   - {fileID: 929685325}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -1327,7 +1339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d381458f6942a4e54a266a3b6d1b4e7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  welpUI: {fileID: 0}
+  welpUI: {fileID: 221286897}
 --- !u!1 &1650295184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1489,22 +1501,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
-    - target: {fileID: 11421076, guid: 62d95e00beb95487aab4e88db05929b6, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1276600581}
     - target: {fileID: 11426794, guid: 62d95e00beb95487aab4e88db05929b6, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1276600581}
-    - target: {fileID: 22358314, guid: 62d95e00beb95487aab4e88db05929b6, type: 2}
-      propertyPath: m_Camera
+    - target: {fileID: 11421076, guid: 62d95e00beb95487aab4e88db05929b6, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 22455548, guid: 62d95e00beb95487aab4e88db05929b6, type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 350
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1276600581}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 62d95e00beb95487aab4e88db05929b6, type: 2}
   m_IsPrefabParent: 0
@@ -1993,6 +1997,14 @@ Prefab:
     - target: {fileID: 11456720, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
       propertyPath: problemType
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11456720, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
+      propertyPath: customerImg
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 179418, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
