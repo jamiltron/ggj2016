@@ -5,8 +5,8 @@ public class SoundManager : MonoBehaviour {
 
 	public AudioClip gameBkgMusic;
 	public AudioClip welpNotificationSfx;
-	/*public AudioClip newCustomerArrivalSfx;
-	*/
+	public AudioClip newCustomerArrivalSfx;
+
 	public AudioClip buttonUISfx;
 
 	public AudioSource sfxSource;              
@@ -24,11 +24,20 @@ public class SoundManager : MonoBehaviour {
 
 	public void PlayButtonClickSfx()
 	{
-		sfxSource.clip = buttonUISfx;
-		sfxSource.Play ();
+		PlaySoundEffect(buttonUISfx);
 	}
 
-	public void PlaySoundEffect(AudioClip clip)
+	public void PlayWelpNotification()
+	{
+		PlaySoundEffect (welpNotificationSfx);
+	}
+
+	public void PlayNewCustomerArrival()
+	{
+		PlaySoundEffect (newCustomerArrivalSfx);
+	}
+
+	void PlaySoundEffect(AudioClip clip)
 	{
 		sfxSource.clip = clip;
 		sfxSource.Play ();
