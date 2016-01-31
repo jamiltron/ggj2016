@@ -8,7 +8,6 @@ public class Lightable : MonoBehaviour {
 
   void Update() {
     if (Input.GetMouseButtonDown(0)) {
-      Debug.Log("mouse down!");
       Vector3 objScreenPosition = Camera.main.WorldToScreenPoint(transform.position);
       Vector3 currentScreenSpace = new Vector3(Input.mousePosition.x, Input.mousePosition.y, objScreenPosition.z);
       Vector3 vec = Camera.main.ScreenToWorldPoint(currentScreenSpace);
