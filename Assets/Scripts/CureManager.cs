@@ -14,6 +14,9 @@ public class CureManager : MonoBehaviour {
 	public void StartTheCure()
 	{
 		objectsUsed = new List<string> ();
+		foreach (Transform child in meshedParent.transform) {
+			GameObject.Destroy(child.gameObject);
+		}
 	}
 
 	public void MeshObject(Draggable item)
