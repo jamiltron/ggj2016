@@ -15,10 +15,11 @@ MonoBehaviour:
   problemText: I want to have a baby but I am not sure the piping is working. Can
     you give me a blessing from the fertility goddesses?
   helpAcceptedText: Oh joyous day!
-  helpDeclinedText: If I had a legacy, it would spoil your lands!
-  positiveResponse: I gave birth to a bouncing baby human!
+  helpDeclinedText: My child's chidren will curse you!
+  positiveResponse: I gave birth to a bouncing baby! I thin it was extra effective,
+    she already has hair!
   averageResponse: This baby doesn't look like me!
-  negativeResponse: I gave birth to a monster!
-  refusalResponse: Can't even bring a baby. What a fraud.
+  negativeResponse: I gave birth to a monster! Did not want!
+  refusalResponse: Won't even perform a basic fertility ritual. What a fraud.
   accepted: 0
-  rating: 0
+  rating: 1

@@ -12,13 +12,13 @@ MonoBehaviour:
   m_Name: SickProblem
   m_EditorClassIdentifier: 
   problemType: 0
-  problemText: I have a headache and the flu, can you give me something to help me
-    get better?
-  helpAcceptedText: Thank you.
+  problemText: I have a 'eadache and 'unny nose. Can you 'ive me some'shing to help
+    me get 'ell?
+  helpAcceptedText: '''sank ''ou.'
   helpDeclinedText: I'm going to cough on the doorhandle on my way out.
   positiveResponse: I'm cured! She's a miracle-worker!
-  averageResponse: I still have a leaky nose...
-  negativeResponse: This "cure" gave me bird flu.
+  averageResponse: Cold reduced but not gone. Not sure if it was ritual or asprin.
+  negativeResponse: This "cure" gave me bird flu. I am covered in feathers!
   refusalResponse: Got better without help. She's not needed.
   accepted: 0
-  rating: 0
+  rating: 2

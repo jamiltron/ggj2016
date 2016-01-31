@@ -15,9 +15,9 @@ MonoBehaviour:
   problemText: My poor little Mr. Fuzz Fuzz has the sniffles!
   helpAcceptedText: Mr. Fuzz Fuzz thanks you from the bottom of his tuna-filled belly.
   helpDeclinedText: Mr. Fuzz Fuzz will haunt you until the end of your days!
-  positiveResponse: yeah cat
-  averageResponse: meh cat
-  negativeResponse: My cat done did die!
-  refusalResponse: boo cat
+  positiveResponse: My dear little Mr. Fuzz Fuzz is purring away. Thanks!
+  averageResponse: Mr. Fuzz Fuzz is alive, but... at what cost?
+  negativeResponse: You killed my Little Fuzz Fuzz! I filed a complaint with the BBB.
+  refusalResponse: No empathy. Useless.
   accepted: 0
   rating: 0
