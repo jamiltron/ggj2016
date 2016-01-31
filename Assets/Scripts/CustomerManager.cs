@@ -17,6 +17,7 @@ public class CustomerManager : MonoBehaviour {
   public int negativeRatingThreshold = 2;
 
   public Customer currentCustomer;
+  public SpriteRenderer currentCustomerImg;
 
   public List<GameObject> customerPrefabs;
   public List<Customer> completedCustomers;
@@ -53,9 +54,15 @@ public class CustomerManager : MonoBehaviour {
       pitchCanvas.gameObject.transform.parent.gameObject.SetActive(true);
       GameObject customerObject = GameObject.Instantiate(customerPrefabs[0]);
       currentCustomer = customerObject.GetComponent<Customer>();
+
+
       if (speechTextBox == null) {
         speechTextBox = GameObject.FindGameObjectWithTag("SpeechBubble").GetComponent<Text>();
       }
+	  if (currentCustomerImg == null) {
+		currentCustomerImg = GameObject.Find("CustomerSprite").GetComponent<SpriteRenderer>();	
+	  }
+	  currentCustomerImg.sprite = currentCustomer.customerImg;
       currentCustomer.speechTextBox = speechTextBox;
       customerPrefabs.RemoveAt(0);
 
@@ -67,6 +74,7 @@ public class CustomerManager : MonoBehaviour {
           currentCustomer.PitchProblem();
           if (pitchCanvas) {
             pitchCanvas.enabled = true;
+			currentCustomerImg.enabled = true;
           }
           if (SoundManager.instance) {
             SoundManager.instance.PlayNewCustomerArrival();

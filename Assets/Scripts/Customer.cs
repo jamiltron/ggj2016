@@ -9,7 +9,6 @@ public class Customer : MonoBehaviour {
   public Sprite customerImg;
 
   void Awake() {
-    GetComponent<SpriteRenderer>().sprite = customerImg;
   }
 
   public void PitchProblem() {
