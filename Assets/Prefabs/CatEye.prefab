@@ -62,8 +62,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   type: cateye
+  itemBehavior: 1
   zoomSpeed: 20
   zoomThreshold: 0.1
+  initialPosition: {x: 0, y: 0, z: 0}
 --- !u!212 &21252124
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -116,6 +118,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: type
       value: cateye
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: itemBehavior
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
