@@ -44,14 +44,18 @@ MonoBehaviour:
   negativeRatingThreshold: 2
   currentCustomer: {fileID: 0}
   customerPrefabs:
-  - {fileID: 179418, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
   - {fileID: 179418, guid: 60a2320f488764bd88d3cac75ef1c3a1, type: 2}
+  - {fileID: 179418, guid: ec676470e21cf4ac7b2bfd08a6198373, type: 2}
   - {fileID: 179418, guid: 5d66f33d99f9548688fce74592dcb47f, type: 2}
+  - {fileID: 179418, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
+  - {fileID: 179418, guid: cac2f713663b547568653b4a60243237, type: 2}
+  - {fileID: 179418, guid: 18a98ee0429a341b9ab9629e68f541bd, type: 2}
+  - {fileID: 179418, guid: 8d2fb2ddb3562498d849b5e22f5c371c, type: 2}
   completedCustomers: []
   newProblems:
   - {fileID: 11400000, guid: 15f6ad278a98c4a089d0d2cc06b0903b, type: 2}
   - {fileID: 11400000, guid: 87f90310175dc4f34b2ebad2ab6071d3, type: 2}
-  - {fileID: 11400000, guid: 5f00ce090f0d443a3a9fcc558c339e9e, type: 2}
+  - {fileID: 0}
   completedProblems: []
   speechTextBox: {fileID: 0}
   pitchCanvas: {fileID: 0}

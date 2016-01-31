@@ -9,9 +9,9 @@ GameObject:
   m_Component:
   - 4: {fileID: 411792}
   - 114: {fileID: 11456720}
-  - 212: {fileID: 21212442}
+  - 212: {fileID: 21264370}
   m_Layer: 0
-  m_Name: BaldCustomer
+  m_Name: CatCustomer
   m_TagString: Customer
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40,11 +40,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48c3d07eb77e1498cac66c0912166abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  problemType: 2
+  problemType: 1
   problem: {fileID: 0}
   speechTextBox: {fileID: 0}
-  customerImg: {fileID: 21300000, guid: 1febc7550ba76449ea2831ac7de7019b, type: 3}
---- !u!212 &21212442
+  customerImg: {fileID: 21300000, guid: ac83b500ceb0b4af29774c7412ed3c9f, type: 3}
+--- !u!212 &21264370
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1febc7550ba76449ea2831ac7de7019b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ac83b500ceb0b4af29774c7412ed3c9f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -82,13 +82,29 @@ Prefab:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 0}
+      propertyPath: m_Name
+      value: CatCustomer
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
       propertyPath: problemType
-      value: 2
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_LocalScale.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: customerImg
       value: 
-      objectReference: {fileID: 21300000, guid: 1febc7550ba76449ea2831ac7de7019b,
+      objectReference: {fileID: 21300000, guid: ac83b500ceb0b4af29774c7412ed3c9f,
         type: 3}
     - target: {fileID: 0}
       propertyPath: m_LocalRotation.y
@@ -106,6 +122,11 @@ Prefab:
       propertyPath: m_LocalPosition.z
       value: -20
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: ac83b500ceb0b4af29774c7412ed3c9f,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 179418}
