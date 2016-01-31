@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46af0f18fe4864b6cb85a45f65c1ac51, type: 3}
+  m_Name: LuckProblem
+  m_EditorClassIdentifier: 
+  problemType: 0
+  problemText: John keeps beating me in poker. Please please please give me some luck
+    to beat him once!
+  helpAcceptedText: Thank you, I'm gonna beat you John!!!
+  helpDeclinedText: What is your use anyway!
+  positiveResponse: Excellent service! She didn't even ask for a commission for the
+    money I made!
+  averageResponse: I wish the cure was effective for all the other players as well.
+    I still lost to others :(
+  negativeResponse: What a waste of money! I paid this witch and I still lost $$$
+    in the game! Damn it!
+  refusalResponse: What I was thinking going to her, you are a witch and talking about
+    ethics!
+  accepted: 0
+  rating: 0
