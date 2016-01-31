@@ -27,13 +27,16 @@ public class dilaradragtest : MonoBehaviour {
 			//convert screen position to world position with offset changes.
 			Vector3 nextPos = Camera.main.ScreenToWorldPoint(currentScreenSpace) + offset;
 			//It will update target gameobject's current postion.
-
+			Vector3 newNextPos = new Vector3(nextPos.x,nextPos.y,transform.position.z);
 			//Trying to update the z
-			float deltaZ = nextPos.y -transform.position.y;
-			nextPos.z += deltaZ;
-			Debug.Log (nextPos);
+			float deltaZ = newNextPos.y -transform.position.y;
+			Debug.Log ("BEFORE" + newNextPos);
 
-			transform.position = nextPos;
+			newNextPos.z += deltaZ;
+	
+			Debug.Log ("AFTER" + newNextPos);
+
+			transform.position = newNextPos;
 		}
 	}
 }
