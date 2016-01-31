@@ -7,6 +7,7 @@ TagManager:
   - SpeechBubble
   - Customer
   - ZoomZone
+  - MeshingArea
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - 
   - ZoomZone
   - GrabLayer
-  - 
+  - MeshingArea
   - 
   - 
   - 

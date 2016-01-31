@@ -3,10 +3,13 @@ using System.Collections;
 
 public class Draggable : MonoBehaviour {
 
+  public LayerMask meshMask;
   public LayerMask grabMask;
+  public string type;
   public float zoomSpeed = 2f;
   public float zoomThreshold = 0.1f;
   private bool zooming = false;
+  
 
   bool isMouseDrag;
   Vector3 offset;
@@ -27,9 +30,26 @@ public class Draggable : MonoBehaviour {
         }
       }
     }
-    if (Input.GetMouseButtonUp(0)) {
-      isMouseDrag = false;
-    }
+		if (Input.GetMouseButtonUp (0)) {
+			if(isMouseDrag)
+			{	
+				objScreenPosition = Camera.main.WorldToScreenPoint (transform.position);
+				offset = transform.position - Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, objScreenPosition.z));
+				Vector3 currentScreenSpace = new Vector3 (Input.mousePosition.x, Input.mousePosition.y, objScreenPosition.z);
+				Vector3 vec = Camera.main.ScreenToWorldPoint (currentScreenSpace);
+
+				RaycastHit2D hit = Physics2D.Raycast (vec, Vector2.right, 0.1f, meshMask);
+				Debug.DrawLine (vec, hit.point);
+				if (hit.transform != null) {
+					hit.transform.gameObject.GetComponent<CureManager> ().MeshObject (gameObject,type);
+				}
+			}
+			isMouseDrag = false;
+
+		}
+
+		
+    
     if (isMouseDrag) {
       //track mouse position.
       Vector3 currentScreenSpace = new Vector3(Input.mousePosition.x, Input.mousePosition.y, objScreenPosition.z);
