@@ -31,6 +31,7 @@ public class UITransitions : MonoBehaviour {
 			if(SoundManager.instance)
 				SoundManager.instance.PlayButtonClickSfx ();
 			welpUI.GetComponent<WelpCanvas> ().ShowResponseText ();
+			welpUI.SetActive (true);
 		}
 	}
 		

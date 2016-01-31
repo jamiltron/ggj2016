@@ -185,6 +185,10 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e110de05e8c2a4c3cbac094bb7285e93, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &221286897 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 176450, guid: d024ce49cdab34f8f8903651c0e8c2ad, type: 2}
+  m_PrefabInternal: {fileID: 275639844}
 --- !u!1 &238533574
 GameObject:
   m_ObjectHideFlags: 0
@@ -386,7 +390,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 176450, guid: d024ce49cdab34f8f8903651c0e8c2ad, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22302016, guid: d024ce49cdab34f8f8903651c0e8c2ad, type: 2}
       propertyPath: m_SortingOrder
@@ -1335,7 +1339,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d381458f6942a4e54a266a3b6d1b4e7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  welpUI: {fileID: 0}
+  welpUI: {fileID: 221286897}
 --- !u!1 &1650295184
 GameObject:
   m_ObjectHideFlags: 0
