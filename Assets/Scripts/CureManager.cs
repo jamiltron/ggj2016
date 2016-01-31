@@ -35,6 +35,10 @@ public class CureManager : MonoBehaviour {
 			item.gameObject.transform.SetParent (meshedParent.transform);
 			item.GetComponent<Collider2D> ().enabled = false;
 		} else {
+			SpriteRenderer[] sprites = meshedParent.GetComponentsInChildren<SpriteRenderer> ();
+			foreach (SpriteRenderer s in sprites) {
+				s.color = item.sprinkleColor;
+			}
 			//item.GetComponent<Animation>().Play("Sprinkle");
 			item.ReturnToOriginalPlace();
 		}

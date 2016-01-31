@@ -17,6 +17,8 @@ public class Draggable : MonoBehaviour {
   public float zoomThreshold = 0.1f;
   private bool zooming = false;
 
+  //for sprinking
+  public Color sprinkleColor;
   Vector3 initialPosition;
 
 
