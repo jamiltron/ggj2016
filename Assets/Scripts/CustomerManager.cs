@@ -27,6 +27,7 @@ public class CustomerManager : MonoBehaviour {
   public Text speechTextBox;
 
   public Canvas pitchCanvas;
+  public Canvas gameOverCanvas;
  
   public GameObject handButton;
 
@@ -44,8 +45,6 @@ public class CustomerManager : MonoBehaviour {
   }
 
   public void GenerateNewCustomer() {
-
-    // TODO: handle when we are out of customers
     if (customerPrefabs.Count > 0) {
       pitchCanvas.gameObject.transform.parent.gameObject.SetActive(true);
       GameObject customerObject = GameObject.Instantiate(customerPrefabs[0]);
@@ -70,6 +69,17 @@ public class CustomerManager : MonoBehaviour {
         }
       }
       throw new UnityException("Unable to find problem for customer with problemType: " + currentCustomer.problemType);
+    } else {
+      int avg = 0;
+      for (int i = 0; i < completedCustomers.Count; i++) {
+        avg += completedCustomers[i].problem.rating;
+      }
+      avg /= completedCustomers.Count;
+      gameOverCanvas.gameObject.SetActive(true);
+      GameOver gameOver = gameOverCanvas.GetComponent<GameOver>();
+      gameOver.averageRating = avg;
+      Debug.Log("Avg: " + avg);
+      gameOver.ShowRating();
     }
   }
 

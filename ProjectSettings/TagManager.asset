@@ -8,6 +8,7 @@ TagManager:
   - Customer
   - ZoomZone
   - MeshingArea
+  - GameOver
   layers:
   - Default
   - TransparentFX
