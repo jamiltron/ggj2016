@@ -112,7 +112,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 953ab22dae0f543d4978663046d07785, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -262,7 +262,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7718f873d6ae841ceb09fe37d7cc32fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameBkgMusic: {fileID: 8300000, guid: 8e18875b6fef94bef954c35ebde783fa, type: 3}
+  gameBkgMusic: {fileID: 8300000, guid: c85660a3e50d94f69839c530cdd39a6c, type: 3}
   welpNotificationSfx: {fileID: 8300000, guid: 09e5c48e20b7c43fe916adbead05fe04, type: 3}
   newCustomerArrivalSfx: {fileID: 8300000, guid: 6eefefd1966704c34914151f9ad25a59,
     type: 3}
