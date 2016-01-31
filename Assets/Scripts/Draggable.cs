@@ -20,7 +20,8 @@ public class Draggable : MonoBehaviour {
   //for sprinking
   public Color sprinkleColor;
   Vector3 initialPosition;
-
+  public Animation sprinkleAnim;
+  bool returnToPos = false;
 
   bool isMouseDrag;
   Vector3 offset;
@@ -29,6 +30,7 @@ public class Draggable : MonoBehaviour {
 	void Start()
 	{
 		initialPosition = transform.position;
+		sprinkleAnim = GetComponent<Animation>();
 	}
 
   // Update is called once per frame
@@ -43,29 +45,24 @@ public class Draggable : MonoBehaviour {
       if (hit.transform != null) {
         if (hit.transform.gameObject == this.gameObject) {
           isMouseDrag = true;
+          returnToPos = false;
         }
       }
     }
-		if (Input.GetMouseButtonUp (0)) {
-			if(isMouseDrag)
-			{	
-				objScreenPosition = Camera.main.WorldToScreenPoint (transform.position);
-				offset = transform.position - Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, objScreenPosition.z));
-				Vector3 currentScreenSpace = new Vector3 (Input.mousePosition.x, Input.mousePosition.y, objScreenPosition.z);
-				Vector3 vec = Camera.main.ScreenToWorldPoint (currentScreenSpace);
+	if (Input.GetMouseButtonUp (0)) {
+		if(isMouseDrag) {	
+			objScreenPosition = Camera.main.WorldToScreenPoint (transform.position);
+            offset = transform.position - Camera.main.ScreenToWorldPoint (new Vector3 (Input.mousePosition.x, Input.mousePosition.y, objScreenPosition.z));
+			Vector3 currentScreenSpace = new Vector3 (Input.mousePosition.x, Input.mousePosition.y, objScreenPosition.z);
+			Vector3 vec = Camera.main.ScreenToWorldPoint (currentScreenSpace);
 
-				RaycastHit2D hit = Physics2D.Raycast (vec, Vector2.right, 0.1f, meshMask);
-				Debug.DrawLine (vec, hit.point);
-				if (hit.transform != null) {
-					hit.transform.gameObject.GetComponent<CureManager> ().MeshObject (this);
-				}
+			RaycastHit2D hit = Physics2D.Raycast (vec, Vector2.right, 0.1f, meshMask);				Debug.DrawLine (vec, hit.point);
+			if (hit.transform != null) {
+			    hit.transform.gameObject.GetComponent<CureManager> ().MeshObject (this);
 			}
-			isMouseDrag = false;
-
 		}
-
-		
-    
+		isMouseDrag = false;
+	}
     if (isMouseDrag) {
       //track mouse position.
       Vector3 currentScreenSpace = new Vector3(Input.mousePosition.x, Input.mousePosition.y, objScreenPosition.z);
@@ -83,11 +80,16 @@ public class Draggable : MonoBehaviour {
 
       transform.position = newNextPos;
     }
+      else if (returnToPos)
+      {
+        else
+          returnToPos = false;
+      }
   }
 
 	public void ReturnToOriginalPlace()
 	{
-		transform.position = initialPosition;
+        returnToPos = true;
 	}
 
   public IEnumerator ChangeZLevels(float targetZ) {

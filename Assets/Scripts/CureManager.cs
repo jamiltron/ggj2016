@@ -32,8 +32,8 @@ public class CureManager : MonoBehaviour {
 			foreach (SpriteRenderer s in sprites) {
 				s.color = item.sprinkleColor;
 			}
-			item.GetComponent<Animation>().Play();
-			item.ReturnToOriginalPlace();
+            if(item.sprinkleAnim)
+    	    	item.sprinkleAnim.Play();
 		}
 	}
 }
