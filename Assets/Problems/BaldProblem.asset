@@ -13,11 +13,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   problemType: 2
   problemText: I'm balding! Please return my locks of yore to this crown!
-  helpAcceptedText: Thank you!
+  helpAcceptedText: Whew, you're my last hope.
   helpDeclinedText: I'll headbutt you in hell!
-  positiveResponse: I'm styling!
-  averageResponse: I just grew one really long strang out of the middle.
-  negativeResponse: This made me grow hair out of everywhere BUT my head!
+  positiveResponse: I'm styling! Gross product but got great results.
+  averageResponse: I just grew one really long hair. Not the result I was seeking.
+  negativeResponse: Ritual made me grow hair out of everywhere BUT my head!
   refusalResponse: Some miracle-worker, harrumph!
   accepted: 0
   rating: 0

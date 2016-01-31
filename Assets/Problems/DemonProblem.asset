@@ -16,9 +16,10 @@ MonoBehaviour:
     contract?
   helpAcceptedText: I'll be able to die without fear of having my soul ground to dust!
   helpDeclinedText: You want me to writhe? Fine.
-  positiveResponse: Smeared contract with this, demon was disgusted and left!
-  averageResponse: Demon bounced leaving behind gross smell of sulphur.
-  negativeResponse: Demon laughed and whipped me!
-  refusalResponse: Witch is in league with demons!
+  positiveResponse: Smeared contract with vile crap, demon was disgusted and left!
+    V. satisfied.
+  averageResponse: Demon issue solved. Now stuck with gross sulphur smell.
+  negativeResponse: Product did not work. Got whupped by demon. Very disappointed.
+  refusalResponse: Real witch, in league with demons, store smelled weird too.
   accepted: 0
   rating: 0

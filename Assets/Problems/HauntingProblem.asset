@@ -12,17 +12,16 @@ MonoBehaviour:
   m_Name: HauntingProblem
   m_EditorClassIdentifier: 
   problemType: 0
-  problemText: 'My grungrungrunkle''s ghost is still lingering in our house. Please
-    help us!!! '
-  helpAcceptedText: Thank you so much!
-  helpDeclinedText: I will tell him to visit you too!
-  positiveResponse: It was amazing to sleep without the ghost snoring for once! Thank
-    you doc!
-  averageResponse: I wish the cure was more effective. It only helped for a couple
-    of days.
-  negativeResponse: What a trap! Now we have grunkle's whole soccer team hanging out
-    in our bedroom!
-  refusalResponse: This doctor is not a very friendly one. She barely listened to
-    my problem and immediately refused to help.
+  problemText: My great grand grunkle's ghost is lingering in our house. He won't
+    stop singing Michael Bolton. Please help!
+  helpAcceptedText: Whew, I can't take another rendition of Soul Provider.
+  helpDeclinedText: Fine. Maybe I can get him to move in with you.
+  positiveResponse: Ghost is gone. Finally got some sleep.
+  averageResponse: I wish the cure was more effective. He is only humming the songs
+    now.
+  negativeResponse: What a trap! Now we have grunkle's whole soccer crew belting sport
+    cheers.
+  refusalResponse: This supposed helper is not a very friendly. She barely listened
+    to my problem and immediately refused to help.
   accepted: 0
   rating: 0
