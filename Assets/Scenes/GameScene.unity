@@ -1021,12 +1021,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e546e91e77764850b63b7191bb6911e, type: 3}
   m_IsPrefabParent: 0
---- !u!114 &1047043821 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11496026, guid: 62d95e00beb95487aab4e88db05929b6,
-    type: 2}
-  m_PrefabInternal: {fileID: 1688102958}
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!114 &1331381529 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11464938, guid: 62d95e00beb95487aab4e88db05929b6,
@@ -1966,64 +1960,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1987456491}
   m_Mesh: {fileID: 4300006, guid: 5e546e91e77764850b63b7191bb6911e, type: 3}
---- !u!1001 &2004961830
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 411792, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 411792, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 411792, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 411792, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 411792, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 411792, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 411792, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 411792, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
-      propertyPath: m_RootOrder
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 11456720, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
-      propertyPath: speechTextBox
-      value: 
-      objectReference: {fileID: 1047043821}
-    - target: {fileID: 11456720, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
-      propertyPath: problemType
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 11456720, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
-      propertyPath: customerImg
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 179418, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: ccb8848e7b3cb48cd9b27495132aa875, type: 2}
-  m_IsPrefabParent: 0
 --- !u!4 &2047454413 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 5e546e91e77764850b63b7191bb6911e, type: 3}
