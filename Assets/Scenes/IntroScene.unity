@@ -267,6 +267,7 @@ MonoBehaviour:
   newCustomerArrivalSfx: {fileID: 8300000, guid: 6eefefd1966704c34914151f9ad25a59,
     type: 3}
   sprinkleSfx: {fileID: 8300000, guid: dfa6fc80ae7d04386a0e12c4c93f446d, type: 3}
+  dropItemOnTable: {fileID: 8300000, guid: 4d108b41c8c7c47809851163794d697b, type: 3}
   buttonUISfx: {fileID: 8300000, guid: 678da528281a84095b6322ae7dca74cb, type: 3}
   sfxSource: {fileID: 115373653}
   bkgmusicSource: {fileID: 115373652}

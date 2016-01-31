@@ -25,6 +25,10 @@ public class CureManager : MonoBehaviour {
 		if (item.itemBehavior == ItemBehavior.sticky) {
 			item.gameObject.transform.SetParent (meshedParent.transform);
 			item.GetComponent<Collider2D> ().enabled = false;
+
+			if (SoundManager.instance) {
+				SoundManager.instance.PlayDropOnTableSfx();
+			}
 		} else {
 			if(SoundManager.instance)
 				SoundManager.instance.PlayPotionSfx ();
