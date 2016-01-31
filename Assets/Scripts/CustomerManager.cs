@@ -41,37 +41,44 @@ public class CustomerManager : MonoBehaviour {
     }
 
     // TODO: handle when we are out of customers
-    GameObject customerObject = GameObject.Instantiate(customerPrefabs[0]);
-    currentCustomer = customerObject.GetComponent<Customer>();
-    if (speechTextBox == null) {
-      speechTextBox = GameObject.FindGameObjectWithTag("SpeechBubble").GetComponent<Text>();
-    }
-    currentCustomer.speechTextBox = speechTextBox;
-    customerPrefabs.RemoveAt(0);
+	if (customerPrefabs.Count > 0) {
+		GameObject customerObject = GameObject.Instantiate (customerPrefabs [0]);
+		currentCustomer = customerObject.GetComponent<Customer> ();
+		if (speechTextBox == null) {
+			speechTextBox = GameObject.FindGameObjectWithTag ("SpeechBubble").GetComponent<Text> ();
+		}
+		currentCustomer.speechTextBox = speechTextBox;
+		customerPrefabs.RemoveAt (0);
 
-    for (int i = 0; i < newProblems.Count; i++) {
-      Problem problem = newProblems[i];
-      if (problem.problemType == currentCustomer.problemType) {
-        currentCustomer.problem = problem;
-        newProblems.RemoveAt(i);
-        currentCustomer.PitchProblem();
+		for (int i = 0; i < newProblems.Count; i++) {
+			Problem problem = newProblems [i];
+			if (problem.problemType == currentCustomer.problemType) {
+				currentCustomer.problem = problem;
+				newProblems.RemoveAt (i);
+				currentCustomer.PitchProblem ();
 				if (pitchCanvas)
 					pitchCanvas.enabled = true;
-        return;
-      }
-    }
-    throw new UnityException("Unable to find problem for customer with problemType: " + currentCustomer.problemType);
-
+				if(SoundManager.instance)
+					SoundManager.instance.PlayNewCustomerArrival ();
+				return;
+			}
+		}
+		throw new UnityException ("Unable to find problem for customer with problemType: " + currentCustomer.problemType);
+	}
   }
 
   public void HelpCustomer() {
     currentCustomer.Help();
 	handButton.SetActive (true);
+	if(SoundManager.instance)
+		SoundManager.instance.PlayButtonClickSfx ();
 
   }
 
   public void DeclineCustomer() {
     currentCustomer.Decline();
     completedProblems.Add(currentCustomer.problem);
+	if(SoundManager.instance)
+		SoundManager.instance.PlayButtonClickSfx ();
   }
 }
