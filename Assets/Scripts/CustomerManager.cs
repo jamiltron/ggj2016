@@ -70,11 +70,15 @@ public class CustomerManager : MonoBehaviour {
   public void HelpCustomer() {
     currentCustomer.Help();
 	handButton.SetActive (true);
+	if(SoundManager.instance)
+		SoundManager.instance.PlayButtonClickSfx ();
 
   }
 
   public void DeclineCustomer() {
     currentCustomer.Decline();
     completedProblems.Add(currentCustomer.problem);
+	if(SoundManager.instance)
+		SoundManager.instance.PlayButtonClickSfx ();
   }
 }
