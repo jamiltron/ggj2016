@@ -17,8 +17,11 @@ public class Problem : ScriptableObject {
   public string helpDeclinedText;
   public string positiveResponse;
   public string averageResponse;
+  public string negativeResponse;
   public string refusalResponse;
   public bool accepted = false;
+  public int rating;
+
   int positiveWeight = 5;
   //lets say we have 0 to 10 (10 being the positive response)
 
@@ -38,14 +41,15 @@ public class Problem : ScriptableObject {
   }
 
   public string GetResponse() {
-    if (!accepted) {
+    return "";
+    /*if (!accepted) {
       return refusalResponse;
     }
-    System.Random randObj = new System.Random(234);
-    int randDecider = randObj.Next(0, 10);
+
+    int rating = UnityEngine.Random.Range(1, 5);
     if (positiveWeight >= randDecider) {
       return positiveResponse;
     }
-    return averageResponse;
+    return averageResponse;*/
   }
 }

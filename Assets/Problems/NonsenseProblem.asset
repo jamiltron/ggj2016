@@ -17,5 +17,7 @@ MonoBehaviour:
   helpDeclinedText: roflmao
   positiveResponse: some positive
   averageResponse: some avg
+  negativeResponse: heh heh heh heh
   refusalResponse: asjdaksjdha
   accepted: 0
+  rating: 0

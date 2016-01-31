@@ -18,5 +18,7 @@ MonoBehaviour:
   helpDeclinedText: I'll headbutt you in hell!
   positiveResponse: Yaay
   averageResponse: Meh
+  negativeResponse: YOU DID SO BAD!
   refusalResponse: Boo
-  accepted: 0
+  accepted: 1
+  rating: 0
