@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46af0f18fe4864b6cb85a45f65c1ac51, type: 3}
+  m_Name: DemonProblem
+  m_EditorClassIdentifier: 
+  problemType: 0
+  problemText: I sold my soul to a demon. Can you provide something to nullify the
+    contract?
+  helpAcceptedText: I'll be able to die without fear of having my soul ground to dust!
+  helpDeclinedText: You want me to writhe? Fine.
+  positiveResponse: Smeared contract with this, demon was disgusted and left!
+  averageResponse: Demon bounced leaving behind gross smell of sulphur.
+  negativeResponse: Demon laughed and whipped me!
+  refusalResponse: Witch is in league with demons!
+  accepted: 0
+  rating: 0
