@@ -51,6 +51,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5f00ce090f0d443a3a9fcc558c339e9e, type: 2}
   completedProblems: []
   speechTextBox: {fileID: 0}
+  pitchCanvas: {fileID: 0}
+  handButton: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

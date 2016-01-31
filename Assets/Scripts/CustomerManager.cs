@@ -17,6 +17,11 @@ public class CustomerManager : MonoBehaviour {
 
   public Text speechTextBox;
 
+  public Canvas pitchCanvas;
+ 
+  public GameObject handButton;
+
+
   void Awake() {
     Object.DontDestroyOnLoad(gameObject);
   }
@@ -54,10 +59,13 @@ public class CustomerManager : MonoBehaviour {
       }
     }
     throw new UnityException("Unable to find problem for customer with problemType: " + currentCustomer.problemType);
+
   }
 
   public void HelpCustomer() {
     currentCustomer.Help();
+	handButton.SetActive (true);
+
   }
 
   public void DeclineCustomer() {

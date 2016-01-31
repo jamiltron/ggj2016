@@ -4,10 +4,9 @@ using System.Collections;
 public class SoundManager : MonoBehaviour {
 
 	public AudioClip gameBkgMusic;
-
-	/*public AudioClip welpNotificationSfx;
-	public AudioClip newCustomerArrivalSfx;
-	public AudioClip buttonClickSfx;*/
+	public AudioClip welpNotificationSfx;
+	/*public AudioClip newCustomerArrivalSfx;
+	*/
 	public AudioClip buttonUISfx;
 
 	public AudioSource sfxSource;              
