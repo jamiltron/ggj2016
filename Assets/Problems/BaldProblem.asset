@@ -12,13 +12,12 @@ MonoBehaviour:
   m_Name: BaldProblem
   m_EditorClassIdentifier: 
   problemType: 2
-  problemText: I need a new do! Please return my lushious locks of yore to this shiny
-    crown!
+  problemText: I'm balding! Please return my locks of yore to this crown!
   helpAcceptedText: Thank you!
   helpDeclinedText: I'll headbutt you in hell!
-  positiveResponse: Yaay
-  averageResponse: Meh
-  negativeResponse: YOU DID SO BAD!
-  refusalResponse: Boo
+  positiveResponse: I'm styling!
+  averageResponse: I just grew one really long strang out of the middle.
+  negativeResponse: This made me grow hair out of everywhere BUT my head!
+  refusalResponse: Some miracle-worker, harrumph!
   accepted: 0
   rating: 0

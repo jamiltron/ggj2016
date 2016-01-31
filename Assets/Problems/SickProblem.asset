@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 46af0f18fe4864b6cb85a45f65c1ac51, type: 3}
-  m_Name: New Problem
+  m_Name: SickProblem
   m_EditorClassIdentifier: 
   problemType: 0
   problemText: I have a headache and the flu, can you give me something to help me
