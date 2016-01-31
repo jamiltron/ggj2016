@@ -11,21 +11,9 @@ public class CureManager : MonoBehaviour {
 
 	public List<string> objectsUsed;
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
-	void StartTheCure()
+	public void StartTheCure()
 	{
 		objectsUsed = new List<string> ();
-
-
 	}
 
 	public void MeshObject(Draggable item)
@@ -35,11 +23,13 @@ public class CureManager : MonoBehaviour {
 			item.gameObject.transform.SetParent (meshedParent.transform);
 			item.GetComponent<Collider2D> ().enabled = false;
 		} else {
+			if(SoundManager.instance)
+				SoundManager.instance.PlayPotionSfx ();
 			SpriteRenderer[] sprites = meshedParent.GetComponentsInChildren<SpriteRenderer> ();
 			foreach (SpriteRenderer s in sprites) {
 				s.color = item.sprinkleColor;
 			}
-			//item.GetComponent<Animation>().Play("Sprinkle");
+			item.GetComponent<Animation>().Play();
 			item.ReturnToOriginalPlace();
 		}
 	}

@@ -30,6 +30,7 @@ public class CustomerManager : MonoBehaviour {
   public Canvas gameOverCanvas;
  
   public GameObject handButton;
+  public CureManager cureMgr;
 
 
   void Awake() {
@@ -61,10 +62,15 @@ public class CustomerManager : MonoBehaviour {
           currentCustomer.problem = problem;
           newProblems.RemoveAt(i);
           currentCustomer.PitchProblem();
-          if (pitchCanvas)
-            pitchCanvas.enabled = true;
-          if (SoundManager.instance)
-            SoundManager.instance.PlayNewCustomerArrival();
+		  if (pitchCanvas) {
+		  	pitchCanvas.enabled = true;
+		  }
+		  if (SoundManager.instance) {
+			SoundManager.instance.PlayNewCustomerArrival();
+		  }
+		  if (cureMgr) {
+			cureMgr.StartTheCure();
+		  }
           return;
         }
       }

@@ -6,6 +6,7 @@ public class SoundManager : MonoBehaviour {
 	public AudioClip gameBkgMusic;
 	public AudioClip welpNotificationSfx;
 	public AudioClip newCustomerArrivalSfx;
+	public AudioClip sprinkleSfx;
 
 	public AudioClip buttonUISfx;
 
@@ -20,6 +21,11 @@ public class SoundManager : MonoBehaviour {
 		else if (instance != this)
 			Destroy (gameObject);
 		DontDestroyOnLoad (gameObject);
+	}
+
+	public void PlayPotionSfx()
+	{
+		PlaySoundEffect(sprinkleSfx);
 	}
 
 	public void PlayButtonClickSfx()
