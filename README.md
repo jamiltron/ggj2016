@@ -5,7 +5,7 @@
 A game where you are running a witch doctor shop in SF, helping modern folks by performing ritualistic item mashing.
 
 **Jam Site:** Gamenest (year 2!)  
-**Jam year:**  2016
+**Jam year:** 2016  
 **Diversifiers:** A Local Game for Local People. 
 **Platforms:** Mac OS X, Linux / Unix, Web standard (HTML5, Java, JavaScript, Flash)  
 **Tools and Technologies:**  Unity (any product)
